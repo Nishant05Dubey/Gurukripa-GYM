@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurukripa Gym App Icon Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #1a1a1a;
+            color: white;
+        }
+        .icon-preview {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        canvas {
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gurukripa Gym App Icons</h1>
+    <p>Right-click and "Save as" to download each icon:</p>
+    
+    <div class="icon-preview">
+        <h3>192x192 Icon</h3>
+        <canvas id="icon192" width="192" height="192"></canvas>
+    </div>
+    
+    <div class="icon-preview">
+        <h3>512x512 Icon</h3>
+        <canvas id="icon512" width="512" height="512"></canvas>
+    </div>
+
+    <script>
+        function createIcon(canvasId, size) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#FF6B35');
+            gradient.addColorStop(0.5, '#E55D3F');
+            gradient.addColorStop(1, '#D2524A');
+            
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, size, size);
+            
+            // Add dark overlay for better text contrast
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+            ctx.fillRect(0, 0, size, size);
+            
+            // Text settings
+            ctx.fillStyle = 'white';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            
+            // Gurukripa Gym text
+            ctx.font = `bold ${size * 0.25}px Arial`;
+            ctx.fillText('Gurukripa', size / 2, size * 0.35);
+            
+            // Subtitle
+            ctx.font = `${size * 0.08}px Arial`;
+            ctx.fillText('Gym', size / 2, size * 0.6);
+            
+            // Icon decoration (dumbbell shape)
+            ctx.strokeStyle = 'white';
+            ctx.lineWidth = size * 0.02;
+            ctx.lineCap = 'round';
+            
+            // Draw simple dumbbell
+            const centerY = size * 0.75;
+            const centerX = size / 2;
+            const barbellWidth = size * 0.3;
+            
+            // Barbell bar
+            ctx.beginPath();
+            ctx.moveTo(centerX - barbellWidth/2, centerY);
+            ctx.lineTo(centerX + barbellWidth/2, centerY);
+            ctx.stroke();
+            
+            // Left weight
+            ctx.beginPath();
+            ctx.arc(centerX - barbellWidth/2, centerY, size * 0.03, 0, 2 * Math.PI);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+            
+            // Right weight
+            ctx.beginPath();
+            ctx.arc(centerX + barbellWidth/2, centerY, size * 0.03, 0, 2 * Math.PI);
+            ctx.fill();
+        }
+        
+        // Generate both icons
+        createIcon('icon192', 192);
+        createIcon('icon512', 512);
+        
+        // Function to download canvas as PNG
+        function downloadIcon(canvasId, filename) {
+            const canvas = document.getElementById(canvasId);
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+        
+        // Add download buttons
+        setTimeout(() => {
+            // Auto-download icons (commented out to avoid automatic downloads)
+            // downloadIcon('icon192', 'icon-192.png');
+            // downloadIcon('icon512', 'icon-512.png');
+            
+            console.log('Icons generated! Right-click on canvas to save.');
+        }, 100);
+    </script>
+</body>
+</html>

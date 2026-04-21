@@ -1,0 +1,145 @@
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Read the generated QR data
+const qrDataFile = path.join(__dirname, 'qr-codes', 'qr-codes-summary.json');
+const qrData = JSON.parse(fs.readFileSync(qrDataFile, 'utf8'));
+
+function createIndividualCard(item) {
+  return `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${item.machine} - QR Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            border: 3px solid #FF6B35;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .logo {
+            color: #FF6B35;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+        .qr-code {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto 20px;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+        }
+        .machine-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .category {
+            font-size: 14px;
+            color: #FF6B35;
+            margin-bottom: 15px;
+        }
+        .variations {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .instructions {
+            font-size: 11px;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+        .scan-icon {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        @media print {
+            body { 
+                margin: 0; 
+                padding: 10px; 
+            }
+            .card {
+                box-shadow: none;
+                border: 2px solid #FF6B35;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">Gurukripa Gym</div>
+        <div class="subtitle">Gurukripa Gym</div>
+        
+        <img src="../${item.qrFile}" alt="QR Code" class="qr-code">
+        
+        <div class="machine-name">${item.machine}</div>
+        <div class="category">${item.category}</div>
+        
+        <div class="variations">
+            ${item.variations.length > 0 
+                ? `<strong>${item.variations.length} Exercise Variations:</strong><br>${item.variations.join(', ')}`
+                : `<strong>Exercise videos coming soon!</strong><br>Check back for updates`
+            }
+        </div>
+        
+        <div class="instructions">
+            <div class="scan-icon">📱</div>
+            <strong>How to use:</strong><br>
+            1. Point your phone camera at the QR code<br>
+            2. Tap the notification to open the exercise guide<br>
+            3. Watch the video instructions before using equipment
+        </div>
+    </div>
+</body>
+</html>`;
+}
+
+// Generate individual cards
+const individualDir = path.join(__dirname, 'qr-codes', 'individual-cards');
+if (!fs.existsSync(individualDir)) fs.mkdirSync(individualDir, { recursive: true });
+
+console.log('🎨 Creating individual printable cards...\n');
+
+qrData.forEach(item => {
+    const cardHtml = createIndividualCard(item);
+    const filename = path.join(individualDir, `${item.machineId}-card.html`);
+    fs.writeFileSync(filename, cardHtml);
+    console.log(`✅ Created card: ${item.machine}`);
+});
+
+console.log(`\n🎉 Generated ${qrData.length} individual cards!`);
+console.log(`📁 Cards saved in: ${individualDir}`);
+console.log('\n💡 Tip: Open each HTML file in your browser and print for high-quality results!');

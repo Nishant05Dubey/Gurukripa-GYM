@@ -1,0 +1,37 @@
+{
+  "Monday": {
+    "title": "International Chest Day",
+    "description": "Focus on pushing movements for chest and triceps.",
+    "machines": ["chest-press", "pec-fly", "shoulder-press"]
+  },
+  "Tuesday": {
+    "title": "Leg Day Destruction",
+    "description": "Build strong foundations with this lower body routine.",
+    "machines": ["leg-press", "leg-extension", "seated-leg-curl", "calf-raise"]
+  },
+  "Wednesday": {
+    "title": "Back & Biceps",
+    "description": "Pulling movements for a wide back and strong arms.",
+    "machines": ["lat-pulldown", "seated-row", "bicep-curl"]
+  },
+  "Thursday": {
+    "title": "Shoulders & Abs",
+    "description": "Sculpt those delts and strengthen your core.",
+    "machines": ["shoulder-press", "lateral-raise", "ab-crunch"]
+  },
+  "Friday": {
+    "title": "Full Body Pump",
+    "description": "Hit every muscle group to start the weekend right.",
+    "machines": ["leg-press", "chest-press", "lat-pulldown", "shoulder-press"]
+  },
+  "Saturday": {
+    "title": "Cardio & Core",
+    "description": "Active recovery and endurance work.",
+    "machines": ["treadmill", "elliptical", "ab-crunch"]
+  },
+  "Sunday": {
+    "title": "Rest & Recovery",
+    "description": "Take it easy, stretch, and prepare for next week.",
+    "machines": []
+  }
+}

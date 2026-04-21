@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KGF Logo Favicon Generator</title>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 20px; 
+            font-family: Arial, sans-serif; 
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+        canvas { 
+            border: 2px solid #FF6B35; 
+            margin: 20px;
+            border-radius: 8px;
+        }
+        .info {
+            background: rgba(255,107,53,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>KGF Premium Favicon Generator</h1>
+    <div class="info">
+        <p>Right-click on the canvas and "Save image as..." to download the favicon</p>
+        <p>Save as "favicon.ico" and replace the existing favicon files</p>
+    </div>
+    
+    <canvas id="favicon" width="64" height="64"></canvas>
+    <canvas id="logo192" width="192" height="192"></canvas>
+    <canvas id="logo512" width="512" height="512"></canvas>
+
+    <script>
+        function drawKGFLogo(canvas, size) {
+            const ctx = canvas.getContext('2d');
+            const centerX = size / 2;
+            const centerY = size / 2;
+            
+            // Clear canvas
+            ctx.clearRect(0, 0, size, size);
+            
+            // Background gradient
+            const bgGrad = ctx.createLinearGradient(0, 0, size, size);
+            bgGrad.addColorStop(0, '#1a1a1a');
+            bgGrad.addColorStop(1, '#000000');
+            ctx.fillStyle = bgGrad;
+            ctx.fillRect(0, 0, size, size);
+            
+            // Shield background
+            const shieldGrad = ctx.createLinearGradient(0, 0, size, size);
+            shieldGrad.addColorStop(0, '#FF6B35');
+            shieldGrad.addColorStop(0.5, '#F7931E');
+            shieldGrad.addColorStop(1, '#FFB347');
+            ctx.fillStyle = shieldGrad;
+            
+            // Draw rounded rectangle (shield)
+            const radius = size * 0.1;
+            const x = size * 0.1;
+            const y = size * 0.1;
+            const width = size * 0.8;
+            const height = size * 0.8;
+            
+            ctx.beginPath();
+            ctx.moveTo(x + radius, y);
+            ctx.arcTo(x + width, y, x + width, y + height, radius);
+            ctx.arcTo(x + width, y + height, x, y + height, radius);
+            ctx.arcTo(x, y + height, x, y, radius);
+            ctx.arcTo(x, y, x + width, y, radius);
+            ctx.closePath();
+            ctx.fill();
+            
+            // Inner shield
+            const innerGrad = ctx.createLinearGradient(0, 0, size, size);
+            innerGrad.addColorStop(0, '#2a2a2a');
+            innerGrad.addColorStop(1, '#000000');
+            ctx.fillStyle = innerGrad;
+            
+            const ix = size * 0.15;
+            const iy = size * 0.15;
+            const iwidth = size * 0.7;
+            const iheight = size * 0.7;
+            const iradius = size * 0.08;
+            
+            ctx.beginPath();
+            ctx.moveTo(ix + iradius, iy);
+            ctx.arcTo(ix + iwidth, iy, ix + iwidth, iy + iheight, iradius);
+            ctx.arcTo(ix + iwidth, iy + iheight, ix, iy + iheight, iradius);
+            ctx.arcTo(ix, iy + iheight, ix, iy, iradius);
+            ctx.arcTo(ix, iy, ix + iwidth, iy, iradius);
+            ctx.closePath();
+            ctx.fill();
+            
+            // KGF Text
+            const fontSize = size * 0.25;
+            ctx.font = `bold ${fontSize}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            
+            // Text gradient
+            const textGrad = ctx.createLinearGradient(0, centerY - fontSize/2, 0, centerY + fontSize/2);
+            textGrad.addColorStop(0, '#FF6B35');
+            textGrad.addColorStop(1, '#F7931E');
+            ctx.fillStyle = textGrad;
+            
+            ctx.fillText('KGF', centerX, centerY);
+            
+            // Text stroke
+            ctx.strokeStyle = '#000';
+            ctx.lineWidth = size * 0.01;
+            ctx.strokeText('KGF', centerX, centerY);
+        }
+        
+        // Generate different sizes
+        drawKGFLogo(document.getElementById('favicon'), 64);
+        drawKGFLogo(document.getElementById('logo192'), 192);  
+        drawKGFLogo(document.getElementById('logo512'), 512);
+        
+        console.log('KGF Logo favicons generated! Right-click to save.');
+    </script>
+</body>
+</html>

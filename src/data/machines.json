@@ -1,0 +1,263 @@
+{
+  "abductor-and-adductor": {
+    "name": "Abductor And Adductor",
+    "description": "Abductor And Adductor exercises and variations",
+    "thumbnail": "/machines/abductor-and-adductor/thumbnail.jpg",
+    "machines": {
+      "abductor-and-adductor": {
+        "name": "Abductor And Adductor",
+        "description": "Variations for Abductor And Adductor",
+        "variations": [
+          "abductor",
+          "adductor"
+        ]
+      }
+    }
+  },
+  "back-rowing": {
+    "name": "Back Rowing",
+    "description": "Back Rowing exercises and variations",
+    "thumbnail": "/machines/back-rowing/thumbnail.jpg",
+    "machines": {
+      "back-rowing": {
+        "name": "Back Rowing",
+        "description": "Variations for Back Rowing",
+        "variations": [
+          "close_rowing",
+          "wide_rowing"
+        ]
+      }
+    }
+  },
+  "chest-cable-fly": {
+    "name": "Chest Cable Fly",
+    "description": "Chest Cable Fly exercises and variations",
+    "thumbnail": "/machines/chest-cable-fly/thumbnail.jpg",
+    "machines": {
+      "chest-cable-fly": {
+        "name": "Chest Cable Fly",
+        "description": "Variations for Chest Cable Fly",
+        "variations": [
+          "high_low_cf",
+          "low_high_cf"
+        ]
+      }
+    }
+  },
+  "forearms": {
+    "name": "Forearms",
+    "description": "Forearms exercises and variations",
+    "thumbnail": "/machines/forearms/thumbnail.jpg",
+    "machines": {
+      "forearms": {
+        "name": "Forearms",
+        "description": "Variations for Forearms",
+        "variations": [
+          "wrist_curls"
+        ]
+      }
+    }
+  },
+  "hacksquat": {
+    "name": "Hacksquat",
+    "description": "Hacksquat exercises and variations",
+    "thumbnail": "/machines/hacksquat/thumbnail.jpg",
+    "machines": {
+      "hacksquat": {
+        "name": "Hacksquat",
+        "description": "Variations for Hacksquat",
+        "variations": [
+          "hack_squat"
+        ]
+      }
+    }
+  },
+  "incline-machine-chest-press": {
+    "name": "Incline Machine Chest Press",
+    "description": "Incline Machine Chest Press exercises and variations",
+    "thumbnail": "/machines/incline-machine-chest-press/thumbnail.jpg",
+    "machines": {
+      "incline-machine-chest-press": {
+        "name": "Incline Machine Chest Press",
+        "description": "Variations for Incline Machine Chest Press",
+        "variations": [
+          "inc_mac_chest_press"
+        ]
+      }
+    }
+  },
+  "lat-pulldowns": {
+    "name": "Lat Pulldowns",
+    "description": "Lat Pulldowns exercises and variations",
+    "thumbnail": "/machines/lat-pulldowns/thumbnail.jpg",
+    "machines": {
+      "lat-pulldowns": {
+        "name": "Lat Pulldowns",
+        "description": "Variations for Lat Pulldowns",
+        "variations": [
+          "close_lat_pulldown",
+          "lat_pull_down",
+          "neutral_lat_pull_down",
+          "reverse_lat_pulldown"
+        ]
+      }
+    }
+  },
+  "legs-hamstring-quad": {
+    "name": "Legs Hamstring Quad",
+    "description": "Legs Hamstring Quad exercises and variations",
+    "thumbnail": "/machines/legs-hamstring-quad/thumbnail.jpg",
+    "machines": {
+      "legs-hamstring-quad": {
+        "name": "Legs Hamstring Quad",
+        "description": "Variations for Legs Hamstring Quad",
+        "variations": [
+          "lying_leg_curl"
+        ]
+      }
+    }
+  },
+  "machine-chest-press": {
+    "name": "Machine Chest Press",
+    "description": "Machine Chest Press exercises and variations",
+    "thumbnail": "/machines/machine-chest-press/thumbnail.jpg",
+    "machines": {
+      "machine-chest-press": {
+        "name": "Machine Chest Press",
+        "description": "Variations for Machine Chest Press",
+        "variations": [
+          "machine_chest_press"
+        ]
+      }
+    }
+  },
+  "machine-lateral-raises": {
+    "name": "Machine Lateral Raises",
+    "description": "Machine Lateral Raises exercises and variations",
+    "thumbnail": "/machines/machine-lateral-raises/thumbnail.jpg",
+    "machines": {
+      "machine-lateral-raises": {
+        "name": "Machine Lateral Raises",
+        "description": "Variations for Machine Lateral Raises",
+        "variations": [
+          "machine_side_raises"
+        ]
+      }
+    }
+  },
+  "machine-shoulder-press": {
+    "name": "Machine Shoulder Press",
+    "description": "Machine Shoulder Press exercises and variations",
+    "thumbnail": "/machines/machine-shoulder-press/thumbnail.jpg",
+    "machines": {
+      "machine-shoulder-press": {
+        "name": "Machine Shoulder Press",
+        "description": "Variations for Machine Shoulder Press",
+        "variations": [
+          "machine_shoulder_press"
+        ]
+      }
+    }
+  },
+  "mahine-rowing": {
+    "name": "Mahine Rowing",
+    "description": "Mahine Rowing exercises and variations",
+    "thumbnail": "/machines/mahine-rowing/thumbnail.jpg",
+    "machines": {
+      "mahine-rowing": {
+        "name": "Mahine Rowing",
+        "description": "Variations for Mahine Rowing",
+        "variations": [
+          "close_machine_row",
+          "wide_machine_row"
+        ]
+      }
+    }
+  },
+  "pec-deck-fly": {
+    "name": "Pec Deck Fly",
+    "description": "Pec Deck Fly exercises and variations",
+    "thumbnail": "/machines/pec-deck-fly/thumbnail.jpg",
+    "machines": {
+      "pec-deck-fly": {
+        "name": "Pec Deck Fly",
+        "description": "Variations for Pec Deck Fly",
+        "variations": [
+          "pec_deck_fly_render",
+          "rev_pec_fly_render"
+        ]
+      }
+    }
+  },
+  "quad-extention": {
+    "name": "Quad Extention",
+    "description": "Quad Extention exercises and variations",
+    "thumbnail": "/machines/quad-extention/thumbnail.jpg",
+    "machines": {
+      "quad-extention": {
+        "name": "Quad Extention",
+        "description": "Variations for Quad Extention",
+        "variations": [
+          "quad_extensions"
+        ]
+      }
+    }
+  },
+  "seated-leg-curl": {
+    "name": "Seated Leg Curl",
+    "description": "Seated Leg Curl exercises and variations",
+    "thumbnail": "/machines/seated-leg-curl/thumbnail.jpg",
+    "machines": {
+      "seated-leg-curl": {
+        "name": "Seated Leg Curl",
+        "description": "Variations for Seated Leg Curl",
+        "variations": [
+          "seated_leg_curl"
+        ]
+      }
+    }
+  },
+  "single-arm-reverse-pulldown": {
+    "name": "Single Arm Reverse Pulldown",
+    "description": "Single Arm Reverse Pulldown exercises and variations",
+    "thumbnail": "/machines/single-arm-reverse-pulldown/thumbnail.jpg",
+    "machines": {
+      "single-arm-reverse-pulldown": {
+        "name": "Single Arm Reverse Pulldown",
+        "description": "Variations for Single Arm Reverse Pulldown",
+        "variations": [
+          "single_arm_lat_pulldown"
+        ]
+      }
+    }
+  },
+  "squats": {
+    "name": "Squats",
+    "description": "Squats exercises and variations",
+    "thumbnail": "/machines/squats/thumbnail.jpg",
+    "machines": {
+      "squats": {
+        "name": "Squats",
+        "description": "Variations for Squats",
+        "variations": [
+          "barbell_squat",
+          "body_weight_squat"
+        ]
+      }
+    }
+  },
+  "tricep-pushdown": {
+    "name": "Tricep Pushdown",
+    "description": "Tricep Pushdown exercises and variations",
+    "thumbnail": "/machines/tricep-pushdown/thumbnail.jpg",
+    "machines": {
+      "tricep-pushdown": {
+        "name": "Tricep Pushdown",
+        "description": "Variations for Tricep Pushdown",
+        "variations": [
+          "cable_tricep_pushdown"
+        ]
+      }
+    }
+  }
+}

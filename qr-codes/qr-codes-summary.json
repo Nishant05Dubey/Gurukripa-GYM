@@ -1,0 +1,209 @@
+[
+  {
+    "category": "Abductor And Adductor",
+    "categoryId": "abductor-and-adductor",
+    "machine": "Abductor And Adductor",
+    "machineId": "abductor-and-adductor",
+    "url": "https://gurukripa-fitness.vercel.app/machine/abductor-and-adductor/abductor-and-adductor",
+    "qrFile": "abductor-and-adductor/abductor-and-adductor-qr.png",
+    "variations": [
+      "abductor",
+      "adductor"
+    ]
+  },
+  {
+    "category": "Back Rowing",
+    "categoryId": "back-rowing",
+    "machine": "Back Rowing",
+    "machineId": "back-rowing",
+    "url": "https://gurukripa-fitness.vercel.app/machine/back-rowing/back-rowing",
+    "qrFile": "back-rowing/back-rowing-qr.png",
+    "variations": [
+      "close_rowing",
+      "wide_rowing"
+    ]
+  },
+  {
+    "category": "Chest Cable Fly",
+    "categoryId": "chest-cable-fly",
+    "machine": "Chest Cable Fly",
+    "machineId": "chest-cable-fly",
+    "url": "https://gurukripa-fitness.vercel.app/machine/chest-cable-fly/chest-cable-fly",
+    "qrFile": "chest-cable-fly/chest-cable-fly-qr.png",
+    "variations": [
+      "high_low_cf",
+      "low_high_cf"
+    ]
+  },
+  {
+    "category": "Forearms",
+    "categoryId": "forearms",
+    "machine": "Forearms",
+    "machineId": "forearms",
+    "url": "https://gurukripa-fitness.vercel.app/machine/forearms/forearms",
+    "qrFile": "forearms/forearms-qr.png",
+    "variations": [
+      "wrist_curls"
+    ]
+  },
+  {
+    "category": "Hacksquat",
+    "categoryId": "hacksquat",
+    "machine": "Hacksquat",
+    "machineId": "hacksquat",
+    "url": "https://gurukripa-fitness.vercel.app/machine/hacksquat/hacksquat",
+    "qrFile": "hacksquat/hacksquat-qr.png",
+    "variations": [
+      "hack_squat"
+    ]
+  },
+  {
+    "category": "Incline Machine Chest Press",
+    "categoryId": "incline-machine-chest-press",
+    "machine": "Incline Machine Chest Press",
+    "machineId": "incline-machine-chest-press",
+    "url": "https://gurukripa-fitness.vercel.app/machine/incline-machine-chest-press/incline-machine-chest-press",
+    "qrFile": "incline-machine-chest-press/incline-machine-chest-press-qr.png",
+    "variations": [
+      "inc_mac_chest_press"
+    ]
+  },
+  {
+    "category": "Lat Pulldowns",
+    "categoryId": "lat-pulldowns",
+    "machine": "Lat Pulldowns",
+    "machineId": "lat-pulldowns",
+    "url": "https://gurukripa-fitness.vercel.app/machine/lat-pulldowns/lat-pulldowns",
+    "qrFile": "lat-pulldowns/lat-pulldowns-qr.png",
+    "variations": [
+      "close_lat_pulldown",
+      "lat_pull_down",
+      "neutral_lat_pull_down",
+      "reverse_lat_pulldown"
+    ]
+  },
+  {
+    "category": "Legs Hamstring Quad",
+    "categoryId": "legs-hamstring-quad",
+    "machine": "Legs Hamstring Quad",
+    "machineId": "legs-hamstring-quad",
+    "url": "https://gurukripa-fitness.vercel.app/machine/legs-hamstring-quad/legs-hamstring-quad",
+    "qrFile": "legs-hamstring-quad/legs-hamstring-quad-qr.png",
+    "variations": [
+      "lying_leg_curl"
+    ]
+  },
+  {
+    "category": "Machine Chest Press",
+    "categoryId": "machine-chest-press",
+    "machine": "Machine Chest Press",
+    "machineId": "machine-chest-press",
+    "url": "https://gurukripa-fitness.vercel.app/machine/machine-chest-press/machine-chest-press",
+    "qrFile": "machine-chest-press/machine-chest-press-qr.png",
+    "variations": [
+      "machine_chest_press"
+    ]
+  },
+  {
+    "category": "Machine Lateral Raises",
+    "categoryId": "machine-lateral-raises",
+    "machine": "Machine Lateral Raises",
+    "machineId": "machine-lateral-raises",
+    "url": "https://gurukripa-fitness.vercel.app/machine/machine-lateral-raises/machine-lateral-raises",
+    "qrFile": "machine-lateral-raises/machine-lateral-raises-qr.png",
+    "variations": [
+      "machine_side_raises"
+    ]
+  },
+  {
+    "category": "Machine Shoulder Press",
+    "categoryId": "machine-shoulder-press",
+    "machine": "Machine Shoulder Press",
+    "machineId": "machine-shoulder-press",
+    "url": "https://gurukripa-fitness.vercel.app/machine/machine-shoulder-press/machine-shoulder-press",
+    "qrFile": "machine-shoulder-press/machine-shoulder-press-qr.png",
+    "variations": [
+      "machine_shoulder_press"
+    ]
+  },
+  {
+    "category": "Mahine Rowing",
+    "categoryId": "mahine-rowing",
+    "machine": "Mahine Rowing",
+    "machineId": "mahine-rowing",
+    "url": "https://gurukripa-fitness.vercel.app/machine/mahine-rowing/mahine-rowing",
+    "qrFile": "mahine-rowing/mahine-rowing-qr.png",
+    "variations": [
+      "close_machine_row",
+      "wide_machine_row"
+    ]
+  },
+  {
+    "category": "Pec Deck Fly",
+    "categoryId": "pec-deck-fly",
+    "machine": "Pec Deck Fly",
+    "machineId": "pec-deck-fly",
+    "url": "https://gurukripa-fitness.vercel.app/machine/pec-deck-fly/pec-deck-fly",
+    "qrFile": "pec-deck-fly/pec-deck-fly-qr.png",
+    "variations": [
+      "pec_deck_fly_render",
+      "rev_pec_fly_render"
+    ]
+  },
+  {
+    "category": "Quad Extention",
+    "categoryId": "quad-extention",
+    "machine": "Quad Extention",
+    "machineId": "quad-extention",
+    "url": "https://gurukripa-fitness.vercel.app/machine/quad-extention/quad-extention",
+    "qrFile": "quad-extention/quad-extention-qr.png",
+    "variations": [
+      "quad_extensions"
+    ]
+  },
+  {
+    "category": "Seated Leg Curl",
+    "categoryId": "seated-leg-curl",
+    "machine": "Seated Leg Curl",
+    "machineId": "seated-leg-curl",
+    "url": "https://gurukripa-fitness.vercel.app/machine/seated-leg-curl/seated-leg-curl",
+    "qrFile": "seated-leg-curl/seated-leg-curl-qr.png",
+    "variations": [
+      "seated_leg_curl"
+    ]
+  },
+  {
+    "category": "Single Arm Reverse Pulldown",
+    "categoryId": "single-arm-reverse-pulldown",
+    "machine": "Single Arm Reverse Pulldown",
+    "machineId": "single-arm-reverse-pulldown",
+    "url": "https://gurukripa-fitness.vercel.app/machine/single-arm-reverse-pulldown/single-arm-reverse-pulldown",
+    "qrFile": "single-arm-reverse-pulldown/single-arm-reverse-pulldown-qr.png",
+    "variations": [
+      "single_arm_lat_pulldown"
+    ]
+  },
+  {
+    "category": "Squats",
+    "categoryId": "squats",
+    "machine": "Squats",
+    "machineId": "squats",
+    "url": "https://gurukripa-fitness.vercel.app/machine/squats/squats",
+    "qrFile": "squats/squats-qr.png",
+    "variations": [
+      "barbell_squat",
+      "body_weight_squat"
+    ]
+  },
+  {
+    "category": "Tricep Pushdown",
+    "categoryId": "tricep-pushdown",
+    "machine": "Tricep Pushdown",
+    "machineId": "tricep-pushdown",
+    "url": "https://gurukripa-fitness.vercel.app/machine/tricep-pushdown/tricep-pushdown",
+    "qrFile": "tricep-pushdown/tricep-pushdown-qr.png",
+    "variations": [
+      "cable_tricep_pushdown"
+    ]
+  }
+]

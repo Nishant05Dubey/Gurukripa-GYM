@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuruKripa Fitness - QR Codes for Printing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: white;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #FF6B35;
+            padding-bottom: 20px;
+        }
+        .gym-title {
+            color: #FF6B35;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .subtitle {
+            color: #666;
+            margin: 5px 0 0 0;
+        }
+        .qr-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .qr-card {
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            background: #fafafa;
+            page-break-inside: avoid;
+        }
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .machine-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .category-name {
+            font-size: 14px;
+            color: #FF6B35;
+            margin-bottom: 10px;
+        }
+        .variations {
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+        }
+        .url {
+            font-size: 10px;
+            color: #999;
+            word-break: break-all;
+            margin-top: 8px;
+            padding: 5px;
+            background: white;
+            border-radius: 4px;
+        }
+        .instructions {
+            background: #f0f9ff;
+            border: 1px solid #0ea5e9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+        .instructions h3 {
+            color: #0369a1;
+            margin-top: 0;
+        }
+        .print-note {
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        @media print {
+            body { margin: 10px; }
+            .no-print { display: none; }
+            .qr-card { 
+                margin-bottom: 20px;
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="gym-title">GuruKripa Fitness</h1>
+        <p class="subtitle">GuruKripa Fitness - Equipment QR Codes</p>
+    </div>
+
+    <div class="instructions no-print">
+        <h3>📋 Installation Instructions</h3>
+        <ol>
+            <li><strong>Print this page</strong> - Use high quality settings for best QR code scanning</li>
+            <li><strong>Cut out each QR code</strong> - Leave some border around each code</li>
+            <li><strong>Laminate (recommended)</strong> - Protects against moisture and wear</li>
+            <li><strong>Attach to equipment</strong> - Place in a visible, easy-to-scan location</li>
+        </ol>
+        <p><strong>💡 Tip:</strong> Test each QR code with your phone camera before installing!</p>
+    </div>
+
+    <div class="qr-grid">
+        
+            <div class="qr-card">
+                <img src="../abductor-and-adductor/abductor-and-adductor-qr.png" alt="QR Code for Abductor And Adductor" class="qr-code">
+                <div class="machine-name">Abductor And Adductor</div>
+                <div class="category-name">Abductor And Adductor</div>
+                <div class="variations">2 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/abductor-and-adductor/abductor-and-adductor</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../back-rowing/back-rowing-qr.png" alt="QR Code for Back Rowing" class="qr-code">
+                <div class="machine-name">Back Rowing</div>
+                <div class="category-name">Back Rowing</div>
+                <div class="variations">2 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/back-rowing/back-rowing</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../chest-cable-fly/chest-cable-fly-qr.png" alt="QR Code for Chest Cable Fly" class="qr-code">
+                <div class="machine-name">Chest Cable Fly</div>
+                <div class="category-name">Chest Cable Fly</div>
+                <div class="variations">2 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/chest-cable-fly/chest-cable-fly</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../forearms/forearms-qr.png" alt="QR Code for Forearms" class="qr-code">
+                <div class="machine-name">Forearms</div>
+                <div class="category-name">Forearms</div>
+                <div class="variations">1 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/forearms/forearms</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../hacksquat/hacksquat-qr.png" alt="QR Code for Hacksquat" class="qr-code">
+                <div class="machine-name">Hacksquat</div>
+                <div class="category-name">Hacksquat</div>
+                <div class="variations">1 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/hacksquat/hacksquat</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../incline-machine-chest-press/incline-machine-chest-press-qr.png" alt="QR Code for Incline Machine Chest Press" class="qr-code">
+                <div class="machine-name">Incline Machine Chest Press</div>
+                <div class="category-name">Incline Machine Chest Press</div>
+                <div class="variations">1 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/incline-machine-chest-press/incline-machine-chest-press</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../lat-pulldowns/lat-pulldowns-qr.png" alt="QR Code for Lat Pulldowns" class="qr-code">
+                <div class="machine-name">Lat Pulldowns</div>
+                <div class="category-name">Lat Pulldowns</div>
+                <div class="variations">4 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/lat-pulldowns/lat-pulldowns</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../legs-hamstring-quad/legs-hamstring-quad-qr.png" alt="QR Code for Legs Hamstring Quad" class="qr-code">
+                <div class="machine-name">Legs Hamstring Quad</div>
+                <div class="category-name">Legs Hamstring Quad</div>
+                <div class="variations">1 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/legs-hamstring-quad/legs-hamstring-quad</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../machine-chest-press/machine-chest-press-qr.png" alt="QR Code for Machine Chest Press" class="qr-code">
+                <div class="machine-name">Machine Chest Press</div>
+                <div class="category-name">Machine Chest Press</div>
+                <div class="variations">1 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/machine-chest-press/machine-chest-press</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../machine-lateral-raises/machine-lateral-raises-qr.png" alt="QR Code for Machine Lateral Raises" class="qr-code">
+                <div class="machine-name">Machine Lateral Raises</div>
+                <div class="category-name">Machine Lateral Raises</div>
+                <div class="variations">1 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/machine-lateral-raises/machine-lateral-raises</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../machine-shoulder-press/machine-shoulder-press-qr.png" alt="QR Code for Machine Shoulder Press" class="qr-code">
+                <div class="machine-name">Machine Shoulder Press</div>
+                <div class="category-name">Machine Shoulder Press</div>
+                <div class="variations">1 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/machine-shoulder-press/machine-shoulder-press</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../mahine-rowing/mahine-rowing-qr.png" alt="QR Code for Mahine Rowing" class="qr-code">
+                <div class="machine-name">Mahine Rowing</div>
+                <div class="category-name">Mahine Rowing</div>
+                <div class="variations">2 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/mahine-rowing/mahine-rowing</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../pec-deck-fly/pec-deck-fly-qr.png" alt="QR Code for Pec Deck Fly" class="qr-code">
+                <div class="machine-name">Pec Deck Fly</div>
+                <div class="category-name">Pec Deck Fly</div>
+                <div class="variations">2 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/pec-deck-fly/pec-deck-fly</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../quad-extention/quad-extention-qr.png" alt="QR Code for Quad Extention" class="qr-code">
+                <div class="machine-name">Quad Extention</div>
+                <div class="category-name">Quad Extention</div>
+                <div class="variations">1 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/quad-extention/quad-extention</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../seated-leg-curl/seated-leg-curl-qr.png" alt="QR Code for Seated Leg Curl" class="qr-code">
+                <div class="machine-name">Seated Leg Curl</div>
+                <div class="category-name">Seated Leg Curl</div>
+                <div class="variations">1 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/seated-leg-curl/seated-leg-curl</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../single-arm-reverse-pulldown/single-arm-reverse-pulldown-qr.png" alt="QR Code for Single Arm Reverse Pulldown" class="qr-code">
+                <div class="machine-name">Single Arm Reverse Pulldown</div>
+                <div class="category-name">Single Arm Reverse Pulldown</div>
+                <div class="variations">1 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/single-arm-reverse-pulldown/single-arm-reverse-pulldown</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../squats/squats-qr.png" alt="QR Code for Squats" class="qr-code">
+                <div class="machine-name">Squats</div>
+                <div class="category-name">Squats</div>
+                <div class="variations">2 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/squats/squats</div>
+            </div>
+        
+            <div class="qr-card">
+                <img src="../tricep-pushdown/tricep-pushdown-qr.png" alt="QR Code for Tricep Pushdown" class="qr-code">
+                <div class="machine-name">Tricep Pushdown</div>
+                <div class="category-name">Tricep Pushdown</div>
+                <div class="variations">1 exercise variations available</div>
+                <div class="url">https://gurukripa-fitness.vercel.app/machine/tricep-pushdown/tricep-pushdown</div>
+            </div>
+        
+    </div>
+
+    <div class="print-note">
+        Generated on 12/20/2025 for GuruKripa Fitness Equipment
+    </div>
+</body>
+</html>
